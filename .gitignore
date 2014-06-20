@@ -18,7 +18,7 @@ parts
 docs/_build
 .tox
 
-data/
+
 etc/
 venv/
 

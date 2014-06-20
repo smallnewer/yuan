@@ -36,11 +36,11 @@ def signup():
         user = form.save()
         login_user(user)
         # send signup mail to user
-        msg = signup_mail(user)
-        if current_app.debug:
-            return msg.html
-        flash(_('We have sent you an activate email, check your inbox.'),
-              'info')
+        # msg = signup_mail(user)
+        # if current_app.debug:
+        #     return msg.html
+        # flash(_('We have sent you an activate email, check your inbox.'),
+        #       'info')
         return redirect(next_url)
     return render_template('signup.html', form=form)
 

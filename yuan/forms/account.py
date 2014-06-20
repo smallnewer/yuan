@@ -1,10 +1,15 @@
 # coding: utf-8
 
 from flask import current_app
-from flask.ext.wtf import TextField, PasswordField, BooleanField
-from flask.ext.wtf import TextAreaField, SelectField
-from flask.ext.wtf.html5 import EmailField
-from flask.ext.wtf import Required, Email, Length, Regexp, Optional
+# from flask.ext.wtf import TextField, PasswordField, BooleanField
+from wtforms import TextField, PasswordField, BooleanField
+# from flask.ext.wtf import TextAreaField, SelectField
+# from flask.ext.wtf.html5 import EmailField
+from wtforms import TextAreaField, SelectField
+from wtforms_html5 import EmailField
+
+# from flask.ext.wtf import Required, Email, Length, Regexp, Optional
+from wtforms.validators import Required, Email, Length, Regexp, Optional
 from flask.ext.babel import lazy_gettext as _
 from wtforms.compat import iteritems
 
